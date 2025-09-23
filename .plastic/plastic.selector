@@ -1,4 +1,0 @@
-repository "TableauDeBord@unity_w_4Al7TOGojjkg@cloud"
-  path "/"
-    smartbranch "/main/stage24" 
-     
