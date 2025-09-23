@@ -1,0 +1,1251 @@
+{
+    "learningPathID": "PATH_TRAINING",
+    "objectives": [
+        {
+            "prerequisites": [],
+            "levels": [
+                {
+                    "level": "TRAINING-O1-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "2"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "INPUT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O1-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "2"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "ID",
+                                "nbFacts": 1,
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "sourceVariation": "RESULT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O1-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "2"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "MEMB",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 1,
+                                "target": "CORRECT"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O1"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O1-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O1"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O2-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "INPUT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O2-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "ID",
+                                "nbFacts": 1,
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "sourceVariation": "RESULT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O2-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "MEMB",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 1,
+                                "target": "CORRECT"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O2"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O2-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O2"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O3-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "2"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O3-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "2"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            },
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT",
+                                    "OPERAND"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O3-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "2"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C2",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 2,
+                                "nbIncorrectChoices": 1,
+                                "targets": [
+                                    "OPERAND_TABLE"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O3"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O10-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-10"
+                },
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O9-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O9"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O11-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "2",
+                                "3",
+                                "4",
+                                "5",
+                                "10"
+                            ],
+                            "resultLocation": "MIX",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 0,
+                                "targets": [
+                                    "RESULT",
+                                    "TABLE",
+                                    "OPERAND"
+                                ],
+                                "answerModality": "INPUT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O11-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "2",
+                                "3",
+                                "4",
+                                "5",
+                                "10"
+                            ],
+                            "resultLocation": "MIX",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 40,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT",
+                                    "TABLE",
+                                    "OPERAND"
+                                ],
+                                "answerModality": "CHOICE"
+                            },
+                            {
+                                "taskType": "C2",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 40,
+                                "nbCorrectChoices": 2,
+                                "nbIncorrectChoices": -1,
+                                "targets": [
+                                    "OPERAND_TABLE"
+                                ],
+                                "answerModality": "CHOICE"
+                            },
+                            {
+                                "taskType": "REC",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 20,
+                                "nbCorrectChoices": 3,
+                                "nbIncorrectChoices": 3
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O11"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O2-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O2"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O4-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "5"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "INPUT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O4-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "5"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "ID",
+                                "nbFacts": 1,
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "sourceVariation": "RESULT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O4-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "5"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "MEMB",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 1,
+                                "target": "CORRECT"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O4"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O3-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O3"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O5-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "3"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "INPUT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O5-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "3"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "ID",
+                                "nbFacts": 1,
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "sourceVariation": "RESULT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O5-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "3"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "MEMB",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 1,
+                                "target": "CORRECT"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O5"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O5-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O5"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O6-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "4"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "INPUT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O6-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "4"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "ID",
+                                "nbFacts": 1,
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "sourceVariation": "RESULT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O6-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "4"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "OPERAND_TABLE",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "MEMB",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 1,
+                                "target": "CORRECT"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O6"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O3-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O3"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O7-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "10",
+                                "2"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O7-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "10",
+                                "2"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            },
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT",
+                                    "OPERAND"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O7-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "10",
+                                "2"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C2",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 2,
+                                "nbIncorrectChoices": 1,
+                                "targets": [
+                                    "OPERAND_TABLE"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O7"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O5-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O5"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O8-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "5",
+                                "2",
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O8-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "5",
+                                "2",
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            },
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT",
+                                    "OPERAND"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O8-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "5",
+                                "2",
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C2",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 2,
+                                "nbIncorrectChoices": 1,
+                                "targets": [
+                                    "OPERAND_TABLE"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O8"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O6-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O6"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O9-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "3",
+                                "2",
+                                "5",
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O9-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "3",
+                                "2",
+                                "5",
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            },
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT",
+                                    "OPERAND"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O9-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "3",
+                                "2",
+                                "5",
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C2",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 2,
+                                "nbIncorrectChoices": 1,
+                                "targets": [
+                                    "OPERAND_TABLE"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-O9"
+        },
+        {
+            "prerequisites": [
+                {
+                    "successPercent": 80.0,
+                    "requiredLevel": "TRAINING-O6-N3",
+                    "encountersPercent": 80.0,
+                    "requiredObjective": "TRAINING-O6"
+                }
+            ],
+            "levels": [
+                {
+                    "level": "TRAINING-O10-N1",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "4",
+                                "2",
+                                "3",
+                                "5",
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O10-N2",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 80.0,
+                            "encounterCompletionCriteria": 80.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "4",
+                                "2",
+                                "3",
+                                "5",
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT"
+                                ],
+                                "answerModality": "CHOICE"
+                            },
+                            {
+                                "taskType": "C1",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 1,
+                                "nbIncorrectChoices": 2,
+                                "targets": [
+                                    "RESULT",
+                                    "OPERAND"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "level": "TRAINING-O10-N3",
+                    "setupParameters": {
+                        "achievementParameters": {
+                            "successCompletionCriteria": 100.0,
+                            "encounterCompletionCriteria": 100.0
+                        },
+                        "buildingParameters": {
+                            "tables": [
+                                "4",
+                                "2",
+                                "3",
+                                "5",
+                                "10"
+                            ],
+                            "resultLocation": "RIGHT",
+                            "leftOperand": "MIX",
+                            "intervalMin": 1,
+                            "intervalMax": 10
+                        },
+                        "tasksParameters": [
+                            {
+                                "taskType": "C2",
+                                "timeMaxSecond": 20,
+                                "successiveSuccessesToReach": 1,
+                                "repartitionPercent": 100,
+                                "nbCorrectChoices": 2,
+                                "nbIncorrectChoices": 1,
+                                "targets": [
+                                    "OPERAND_TABLE"
+                                ],
+                                "answerModality": "CHOICE"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "objective": "TRAINING-10"
+        }
+    ]
+}

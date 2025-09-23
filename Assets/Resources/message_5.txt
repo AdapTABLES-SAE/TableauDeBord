@@ -1,0 +1,4 @@
+{
+    "learningPathID": "PATH_TRAINING",
+    "objectives": []
+}
